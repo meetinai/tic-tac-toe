@@ -48,7 +48,7 @@ const TicTacToe = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Tic Tac Toe</h1>
+      <h1 className={styles.title}>Tic Tac</h1>
       <div className={styles.scoreboard}>
         <div className={styles.score}>
           <span className={styles.player}>Player O:</span> <span className={styles.scoreValue}>{score.O}</span>
