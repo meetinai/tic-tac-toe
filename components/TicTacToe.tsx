@@ -39,6 +39,11 @@ const TicTacToe = () => {
     }
   };
 
+  const resetBoard = () => {
+    setBoard(emptyBoard);
+    setWinner(null);
+  };
+
   React.useEffect(checkWinner, [board]);
 
   return (
@@ -63,6 +68,7 @@ const TicTacToe = () => {
         ))}
         {winner && <div className={styles.winner}>Player {winner} won!</div>}
       </div>
+      {winner && <button onClick={resetBoard} className={styles.resetButton}>Reset Game</button>}
     </div>
   );
 };
