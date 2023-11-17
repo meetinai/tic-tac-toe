@@ -48,7 +48,7 @@ const TicTacToe = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Tic Tac</h1>
+      <h1 className={styles.title}>Tic Tac Toe</h1>
       <div className={styles.scoreboard}>
         <div className={styles.score}>
           <span className={styles.player}>Player O:</span> <span className={styles.scoreValue}>{score.O}</span>
@@ -60,7 +60,7 @@ const TicTacToe = () => {
       <div className={styles.board}>
         {board.map((item, index) => (
           <div
-            className={`${styles.cell} ${item && styles[item]}`}
+            className={`${styles.cell} ${item && styles[item]} border-black border-2`}
             key={index}
             onClick={() => handleCellClick(index)}
           >
